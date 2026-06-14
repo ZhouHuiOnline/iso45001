@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>获证组织信息验证平台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#f5f5f5;
+    font-family: "Microsoft Yahei",sans-serif;
+}
+/* 顶部标题栏 */
+.top-bar{
+    text-align:center;
+    padding:20px 10px 10px;
+}
+.top-title{
+    font-size:22px;
+    font-weight:bold;
+    color:#222;
+}
+.top-url{
+    font-size:14px;
+    color:#666;
+    margin-top:6px;
+}
+/* 🔑 关键修改：让Logo容器宽度100% */
+.logo-box{
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+}
+/* 🔑 让Logo图片撑满容器宽度，同时保持圆形 */
+.logo-circle{
+    width:100%;
+    max-width:400px; /* 限制最大宽度，避免在大屏上过大 */
+    aspect-ratio:1/1; /* 保持1:1圆形比例 */
+    border-radius:50%;
+    background:#fff;
+    /* 如果你有图片，用下面这行替换背景 */
+    /* background: url('你的logo图片地址') center/cover no-repeat; */
+}
+.info-block{
+    background:#222222;
+    color:#ffffff;
+    padding:25px 20px;
+}
+.status-line{
+    text-align:right;
+    font-size:22px;
+    margin-bottom:25px;
+}
+.status-text{
+    color:#fff;
+}
+.status-valid{
+    color:#cc0000;
+    font-weight:bold;
+    margin-left:8px;
+}
+.info-item{
+    font-size:16px;
+    line-height:2.2;
+    margin:8px 0;
+}
+.bottom-tip{
+    background:#222222;
+    color:#ddd;
+    font-size:18px;
+    padding:10px 20px 20px;
+    line-height:1.8;
+}
+</style>
+</head>
+<body>
+    <div class="logo-box">
+        <!-- 🔑 这里可以直接用img标签替换，效果更好 -->
+        <img src="imges/中环质安logo.webp" alt="认证logo" class="logo-circle">
+    </div>
+
+    <div class="info-block">
+        <div class="status-line">
+            <span class="status-text">证书状态：</span>
+            <span class="status-valid">撤销</span>
+        </div>
+        <div class="info-item">获证组织名称：河北州晖管道装备有限公司</div>
+        <div class="info-item">证书编号：39316Q2786R0S</div>
+        <div class="info-item">认证标准：GB/T 19001-2016/ISO 9001:2015 质量管理体系 要求</div>
+        <div class="info-item">认证领域：质量管理体系</div>
+        <div class="info-item">认证范围：保温防腐管道管件、管托、支吊架的销售</div>
+        <div class="info-item">企业地址：中国河北省沧州市盐山县205国道与225乡道西50米017号</div>
+        <div class="info-item">有效截止日期：2026-06-11</div>
+        <!--   <div class="info-item">认证机构名称：北京中环质安国际认证有限公司</div>-->
+    </div>
+
+    <div class="bottom-tip">
+         
+        认证证书有效性的进一步查询可登陆：<br>
+        认证机构网站：<a herf="https://zhouhuionline.github.io/iso9001/">www.cciso.com.cn</a><br>
+        中国国家认证认可监督管理委员会
+         
+    </div>
+
+</body>
+</html>
